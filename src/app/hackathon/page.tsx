@@ -1,6 +1,7 @@
 import PageWrapper from "@/components/layout/PageWrapper";
 import Image from "next/image";
 import banner from "./hackathon_banner.png";
+import Timer from "@/components/Timer";
 
 export default function HackathonPage() {
   return (
@@ -8,6 +9,7 @@ export default function HackathonPage() {
       <div className="container mx-auto px-6 py-24 pt-32 md:pt-40">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center">Hackathon</h1>
         <div className="mt-12 flex justify-center flex-col items-center">
+          <Timer/>
           <div className="w-[600px] overflow-hidden rounded-2xl shadow-lg">
             <Image
               src={banner}
@@ -18,11 +20,11 @@ export default function HackathonPage() {
             />
           </div>
           <div className="text-center mt-6">
-          <a href="https://drive.google.com/drive/folders/1btOHslmPBXAT7nRqaDhiMQs5ZEiM41zX"
-            className="bg-indigo-500 text-white px-4 py-1.5 rounded hover:bg-indigo-800">
-            Problem Statement
-          </a>
-        </div>
+            <a href="https://drive.google.com/drive/folders/1btOHslmPBXAT7nRqaDhiMQs5ZEiM41zX"
+              className="bg-indigo-500 text-white px-4 py-1.5 rounded hover:bg-indigo-800">
+              Problem Statement
+            </a>
+          </div>
         </div>
       </div>
     </PageWrapper>
