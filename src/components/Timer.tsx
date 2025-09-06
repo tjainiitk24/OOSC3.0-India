@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 
 export default function Timer() {
-  const END_TIME = new Date("2025-09-07T13:20:00").getTime();
+  const END_TIME = new Date("2025-09-07T14:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState(0);
 
